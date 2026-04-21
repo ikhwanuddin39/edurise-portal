@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 
 export default function Home() {
-  const isLoggedIn = true; // ambil dari cookie / session
+  const isLoggedIn = false;
 
   if (isLoggedIn) {
     redirect("/dashboard");
