@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import { User } from "@/types/user";
+import { User, SessionUser } from "@/types/user";
 import { readUserProfile } from "@/lib/data/userProfileStore";
 
 export async function getSessionUser(): Promise<User | null> {
