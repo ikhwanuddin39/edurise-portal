@@ -16,6 +16,7 @@ export interface CourseCardProps {
   onDownload?: () => void;
   onDetail?: () => void;
   onAdd?: () => void;
+  priority?: boolean;
 }
 
 export function CourseCard({
@@ -29,6 +30,7 @@ export function CourseCard({
   onDownload,
   onDetail,
   onAdd,
+  priority = false,
 }: CourseCardProps) {
   const isEnrolled = variant === "enrolled";
   const isCompleted = progress === 100;
@@ -43,6 +45,7 @@ export function CourseCard({
           fill
           unoptimized
           className="object-cover"
+          priority={priority}
         />
       </div>
 

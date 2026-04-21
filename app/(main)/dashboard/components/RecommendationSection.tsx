@@ -13,7 +13,7 @@ export async function RecommendationSection() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {courses.map((course: Course) => (
+                {courses.map((course: Course, index: number) => (
                     <CourseCard
                         key={course.id}
                         variant="recommendation"
@@ -21,6 +21,7 @@ export async function RecommendationSection() {
                         moduleName={`${course.currentLessonNumber}. ${course.currentLesson}`}
                         imageUrl={course.thumbnail}
                         category={course.category}
+                        priority={index === 0}
                     />
                 ))}
             </div>

@@ -11,7 +11,7 @@ export async function MyCourseSection() {
                 Kursus saya ({courses.length})
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {courses.map((course: EnrolledCourse) => (
+                {courses.map((course: EnrolledCourse, index: number) => (
                     <CourseCard
                         key={course.id}
                         variant="enrolled"
@@ -19,6 +19,7 @@ export async function MyCourseSection() {
                         moduleName={`${course.currentLessonNumber}. ${course.currentLesson}`}
                         progress={course.progress}
                         imageUrl={course.thumbnail}
+                        priority={index === 0}
                     />
                 ))}
             </div>
