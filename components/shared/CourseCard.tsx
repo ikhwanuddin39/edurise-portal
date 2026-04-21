@@ -50,16 +50,18 @@ export function CourseCard({
       <div className="p-4 flex flex-col flex-1">
         {/* RECOMMENDATION VARIANT: Category Badge */}
         {!isEnrolled && (
-          <span
-            className=
-            "self-start text-sm font-medium px-2 py-0.5 rounded-full mb-3 inline-flex items-center justify-center bg-primitive text-primary"
-          >
+          <span className="self-start text-sm font-medium px-2 py-0.5 rounded-full mb-3 inline-flex items-center justify-center bg-primitive text-primary">
             {category}
           </span>
         )}
 
         {/* Titles */}
-        <h4 className={cn("text-[13px] font-medium text-gray-500 leading-tight", !isEnrolled && "mt-0")}>
+        <h4
+          className={cn(
+            "text-[13px] font-medium text-dark-grey leading-tight",
+            !isEnrolled && "mt-0",
+          )}
+        >
           {isEnrolled ? courseName : courseName}
         </h4>
         <h3 className="text-[15px] font-medium text-gray-800 mt-1.5 leading-snug">
@@ -73,7 +75,7 @@ export function CourseCard({
               <div
                 className={cn(
                   "absolute top-0 left-0 h-full rounded-full",
-                  isCompleted ? "bg-[#22c55e]" : "bg-primary"
+                  isCompleted ? "bg-[#22c55e]" : "bg-primary",
                 )}
                 style={{ width: `${progress}%` }}
               />
@@ -81,7 +83,7 @@ export function CourseCard({
             <span
               className={cn(
                 "text-[13px] font-medium min-w-[32px] text-right",
-                isCompleted ? "text-[#22c55e]" : "text-primary"
+                isCompleted ? "text-[#22c55e]" : "text-primary",
               )}
             >
               {progress}%

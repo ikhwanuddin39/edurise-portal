@@ -26,7 +26,7 @@ function NotificationBell() {
   return (
     <button
       aria-label="Notifikasi"
-      className="relative p-1 text-gray-500 hover:text-gray-700 transition-colors"
+      className="relative p-1 text-dark-grey hover:text-gray-700 transition-colors"
     >
       <Image src="/icons/bell.svg" alt="Bell" width={20} height={20} />
       <span className="absolute right-0.5 top-0.5 h-2 w-2 rounded-full bg-red-500 ring-2 ring-white" />
@@ -39,7 +39,7 @@ function UserProfile({ avatarUrl }: { avatarUrl?: string | null }) {
   return (
     <button
       aria-label="User Profile"
-      className="relative p-1 text-gray-500 hover:text-gray-700 transition-colors"
+      className="relative p-1 text-dark-grey hover:text-gray-700 transition-colors"
     >
       <div className="relative w-12 h-12 rounded-full overflow-hidden">
         <Image

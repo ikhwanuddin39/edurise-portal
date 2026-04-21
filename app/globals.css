@@ -6,7 +6,8 @@
   --primary: #2e90fa;
   --secondary-text: #101828;
   --disabled: #98a2b3;
-  --primitive: #D1E9FF;
+  --primitive: #d1e9ff;
+  --dark-grey: #475467;
 }
 
 @theme inline {
@@ -17,6 +18,7 @@
   --color-secondary-text: var(--secondary-text);
   --color-disabled: var(--disabled);
   --color-primitive: var(--primitive);
+  --color-dark-grey: var(--dark-grey);
   /* text & font */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
