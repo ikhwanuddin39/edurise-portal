@@ -8,7 +8,7 @@ Platform Learning Management System (LMS) modern yang berfokus pada kecepatan, S
 
 1. **Clone & Masuk ke Folder**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ikhwanuddin39/edurise-portal
    cd edurise-portal
    ```
 
