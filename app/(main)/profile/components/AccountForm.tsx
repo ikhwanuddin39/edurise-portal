@@ -156,6 +156,8 @@ export function AccountForm({ initialData }: AccountFormProps) {
                 fill
                 className="object-cover"
                 unoptimized
+                priority
+                sizes="224px"
               />
               {/* Overlay button */}
               <button

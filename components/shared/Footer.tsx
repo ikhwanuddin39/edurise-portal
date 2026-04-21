@@ -62,7 +62,7 @@ function SocialIcon({ label, iconPath, url }: { label: string; iconPath: string;
     return (
         <a href={url} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-9 h-9 rounded-full bg-[#363B4766] flex items-center justify-center text-white hover:bg-primary transition-colors">
             <div className="relative w-5 h-5">
-                <Image src={iconPath} alt={label} fill className="object-contain" />
+                <Image src={iconPath} alt={label} fill sizes="20px" className="object-contain" />
             </div>
         </a>
     );
