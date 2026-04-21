@@ -4,11 +4,11 @@
   "firstName": "Kevin test",
   "lastName": "Gilbert",
   "email": "user@gmail.com",
-  "username": "user07",
+  "username": "user01",
   "avatarUrl": "/uploads/avatar-1776754044453.png",
   "phone": "+62 8766776549",
   "jobTitle": "An enthusiast developer with ability to design with various tool",
-  "password": "password1234",
+  "password": "password123",
   "notifications": {
     "emailEnabled": true,
     "emailWeeklyReport": true,
