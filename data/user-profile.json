@@ -1,0 +1,18 @@
+{
+  "id": "user-001",
+  "name": "Kevin test Gilbert",
+  "email": "user@gmail.com",
+  "username": "user07",
+  "avatarUrl": "/uploads/avatar-1776754044453.png",
+  "phone": "+62 876677654",
+  "jobTitle": "An enthusiast developer with ability to design with various tool",
+  "password": "password1234",
+  "notifications": {
+    "emailEnabled": false,
+    "emailWeeklyReport": true,
+    "emailCertificate": true,
+    "emailNewCourse": false,
+    "whatsappEnabled": true,
+    "whatsappMotivation": true
+  }
+}

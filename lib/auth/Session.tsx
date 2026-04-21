@@ -1,27 +1,24 @@
 import { cookies } from "next/headers";
 import { User } from "@/types/user";
+import { readUserProfile } from "@/lib/data/userProfileStore";
 
 export async function getSessionUser(): Promise<User | null> {
-  // TODO: Implement actual session retrieval logic here
-  // Example for Next.js 15+ with async cookies:
   const cookieStore = await cookies();
-  const sessionToken = cookieStore.get("session-token")?.value;
+  const sessionToken = cookieStore.get("auth-token")?.value;
 
-  // if (!sessionToken) {
-  //   return null;
-  // }
+  if (!sessionToken) {
+    return null;
+  }
 
   try {
-    // Decode or fetch user from database using the sessionToken
-    // const user = await fetchUserByToken(sessionToken);
-
-    // Placeholder return
+    // Read the latest user data from JSON file
+    const profile = readUserProfile();
     return {
-      id: "1",
-      name: "John Doe",
-      email: "john@example.com",
-      avatarUrl: "https://example.com/avatar.jpg",
-      username: "johndoe",
+      id: profile.id,
+      name: profile.name,
+      email: profile.email,
+      avatarUrl: profile.avatarUrl,
+      username: profile.username,
     };
   } catch (error) {
     console.error("Error getting session user:", error);
