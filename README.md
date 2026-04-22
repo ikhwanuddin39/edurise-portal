@@ -1,6 +1,6 @@
 # EduRise Learning Portal
 
-Platform Learning Management System (LMS) modern yang berfokus pada kecepatan, SEO, dan pengalaman pengguna yang mulus. Dibangun menggunakan ekosistem **Next.js 15**, **Tailwind CSS**, dan **TypeScript**.
+Platform Learning Management System (LMS) modern yang berfokus pada kecepatan, SEO, dan pengalaman pengguna yang mulus. Dibangun menggunakan ekosistem **Next.js 16**, **Tailwind CSS**, dan **TypeScript**.
 
 ---
 
