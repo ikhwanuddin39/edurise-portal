@@ -3,6 +3,7 @@ import { ProfileHeader } from "@/components/shared/ProfileHeader";
 import { TabNav } from "@/components/shared/TabNav";
 import { getSessionUser } from "@/lib/auth/Session";
 import { ReactNode } from "react";
+import { redirect } from "next/navigation";
 import { Footer } from "@/components/shared/Footer";
 import { WelcomeBanner } from "@/app/(main)/dashboard/components/WelcomeBanner";
 import { ToastProvider } from "@/components/shared/ToastProvider";

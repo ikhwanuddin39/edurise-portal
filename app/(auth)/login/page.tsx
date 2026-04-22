@@ -4,9 +4,6 @@ import { getSessionUser } from '@/lib/auth/Session'
 import { LoginForm } from './_components/LoginForm'
 
 export default async function LoginPage() {
-  const user = await getSessionUser()
-  if (user) redirect('/dashboard')
-
   return (
     <main className="min-h-screen w-full bg-white flex">
       {/* Left side: Illustration */}
